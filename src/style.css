@@ -1,0 +1,113 @@
+
+
+body {
+background: rgb(238,174,202);
+background: -moz-linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(214,166,62,1) 100%);
+background: -webkit-linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(214,166,62,1) 100%);
+background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(214,166,62,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#eeaeca",endColorstr="#d6a63e",GradientType=1);
+padding:0;
+margin:0;
+font-family:Shalimar;
+}
+
+.row1 h1 {
+    font-size:25px;
+    text-align:center;
+    margin-top:150px;
+    margin-left:45px;
+    font-family:Lucida Handwriting, serif;
+
+}
+
+
+.row2{
+    position:absolute;
+    top:10px;
+    right:150px;
+    text-align:center;
+}
+.row2 h2{
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom:15px;
+}
+
+.search input{
+    outline: 0;
+    border: 0;
+    width: 350px;
+    height: 35px;
+    padding: 0 0.5rem;
+    font-size: 15px;
+    font-weight: bold;
+    }
+    .search button{
+    outline: none;
+    border: none;
+    height: 35px; 
+    padding: 0 0.5rem;
+    }
+    .books{
+ 
+        position:absolute;
+        height:500px;
+        width:500px;
+        margin-top:700px;
+        
+       }
+.search{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+.container{
+    width:65%;
+    margin:0 auto;
+    margin-top:25px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,0.5fr));
+    grid-gap:20px;
+    box-sizing:border-box;
+}
+.card{
+    background-color:brown;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    margin-bottom: 10px;
+    box-shadow: 0 5px 5px rgba(238, 213, 181, 0.5);
+    transition: .5s;
+    text-align:center;
+    position:relative;
+}
+.card:hover{
+    transform: scale(0.9);
+    background-color: rgba(255,255,255,0.8);
+}
+
+.card img{
+    width:100%;
+    height: 200px;
+    border-radius: 1rem 1rem 0 0;
+}
+.card .bottom{
+    display:flex;
+    flex-direction: column;
+}
+
+.card .bottom .title{
+   font-family: 14px;
+   margin-bottom: 12px;
+}
+
+.card .bottom .amount{
+    position: absoulute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    background-color:rgb(231, 182, 47);
+    color:blueviolet;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 0.2rem;
+}
